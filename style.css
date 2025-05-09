@@ -1,5 +1,4 @@
-/* CSS Reset: http://meyerweb.com/eric/tools/css/reset */
-
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,25 +19,33 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+/* HTML5 display-role reset */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
+    font-family: roboto, sans-serif;
+    color: #a0a8b0;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -49,12 +56,7 @@ table {
 #main {
     width: 960px;
     margin: 0px auto;
-}
-
-#body{
-    font-family: roboto, sans-serif;
-    color: #a0a8b0;
-    /*color: #191e3f;*/
+    padding: 20px;
 }
 
 p {
@@ -85,23 +87,23 @@ h1 {
 
 /**************************************************/
 
-#header {
-    height: 58px;
-    font-size: 14px;
-    line-height: 58px;
-    padding-top: 42px;
-    text-align: right;
+/* NAVIGATION BAR */
+#navbar {
+    width: 100%;
+    background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
-    padding-right: 30px;
+    text-align: right;
+    padding: 20px 30px 10px 30px;
+    font-size: 14px;
 }
 
-#header a {
-    text-decoration: none;
-    border-bottom: none;
+#navbar a {
+    margin-left: 20px;
     color: #a0a8b0;
+    text-decoration: none;
 }
 
-#header a:hover {
+#navbar a:hover {
     color: #4a85c8;
 }
 
@@ -151,7 +153,7 @@ h1 {
 }
 
 .slider a:hover {
-    border: none
+    border: none;
 }
 
 .slider img {
@@ -160,6 +162,7 @@ h1 {
     margin-right: 20px;
 }
 
+/* Scrollbar Styling */
 .recent-work::-webkit-scrollbar {
     background: none;
     height: 8px;
@@ -200,97 +203,26 @@ ul {
     color: #a0a8b0;
 }
 
-.showBtn {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 24px;
-    float: left;
-}
-
-.showBtn a {
-    color: #003373;
-    cursor: pointer;
-}
-
-.showBtn a:hover {
-    border-bottom: 1px solid #003373;
-}
-
-#moreNews {
-    display: none;
-}
-
-#lessNewsBtn {
-    display: none;
-}
-
-#moreTalks {
-    display: none;
-}
-
-#lessTalksBtn {
-    display: none;
-}
-
 /**************************************************/
 
-
 h3 {
-    margin-left:  30px;
+    margin-left: 30px;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom:  15px;
-}
-
-#repBtn {
-    color: #49bf9d;
-    display: inline;
-    text-decoration: none;
-    border-bottom: 1px solid #a4dfce;
-}
-
-#repBtn a {
-    color: inherit;
-}
-
-#repBtn a:hover {
-    color: #49bf9d;
-}
-
-#showAllBtn {
-    color: #191e3f;
-    display: inline;
-    text-decoration: none;
-}
-
-#showAllBtn a {
-    color: inherit;
-}
-
-#showAllBtn a:hover {
-    color: #49bf9d;
+    margin-bottom: 15px;
 }
 
 /**************************************************/
 
 .research {
-    /*padding: 30px;*/
     /*padding-bottom: 30px;*/
 }
-
 
 .research-proj {
     margin-left: 30px;
     width: 100%;
     display: table;
-
 }
-
-.nonRep {
-    display:  none;
-}
-
 
 .research-thumb {
     width: 180px;
@@ -300,21 +232,18 @@ h3 {
     margin-bottom: 20px;
 }
 
-.research-thumb:hover {
-    border-bottom: none;
-}
-
 .research-thumb img {
     width: 100%;
     border-radius: 5px;
 }
 
 .research-thumb video {
-  margin-top: 0.4em;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
+    margin-top: 0.4em;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
 }
+
 .research-proj-title {
     color: #003373;
     font-size: 16px;
@@ -335,66 +264,40 @@ h3 {
     font-weight: 700;
 }
 
-#morePubs {
-    display: none;
-}
-
-#morePubsBtn {
-    margin-left: 30px;
-}
-
-#lessPubsBtn {
-    display: none;
-    margin-left: 30px;
-}
-
 /**************************************************/
 
-.sponsors {
-    margin-bottom: 120px;
-}
-
-.sponsors h1 {
-    margin-bottom: 0px;
-}
-
-.sponsor-thumb img {
-    margin-left: 20px;
-    height: 100px;
-}
-
-.sponsor-thumb a:hover {
-    border: none;
-}
-
-/**************************************************/
-
-.people {
-    padding-left: 30px;
-}
-
-.student-profile {
-    width: 125px;
-    float: left;
+/* Nice CV Download Button */
+.cv-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #003373;
+    color: white;
+    border-radius: 8px;
     text-align: center;
-    margin: 0 30px 30px 0;
-    font-size: 14px;
-    line-height: 20px;
+    transition: background-color 0.3s;
 }
 
-.student-profile p {
-    color: #003373;
+.cv-button:hover {
+    background-color: #4a85c8;
+    color: white;
 }
 
-.student-profile p a {
-    color: #003373;
-}
+/**************************************************/
 
-.student-profile p a:hover {
-    border-bottom: 1px solid #003373;
-}
+/* Small responsive improvements */
+@media screen and (max-width: 1000px) {
+    #main {
+        width: 90%;
+    }
 
-.student-profile img {
-    width: 100%;
-    border-radius: 10px;
+    #profile-pic, #profile-intro {
+        float: none;
+        text-align: center;
+    }
+
+    #profile img {
+        width: 180px;
+    }
 }
