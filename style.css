@@ -195,7 +195,7 @@ h1 {
 
 .divider {
     width: 100%;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #555; /* medium-dark grey */
 }
 
 /**************************************************/
