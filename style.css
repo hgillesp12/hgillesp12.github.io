@@ -277,7 +277,7 @@ h3 {
 }
 
 .portfolio-thumb {
-    width: 1000px;
+    width: 500px;
     float: left;
     margin-top: 7px;
     padding-right: 30px;
@@ -294,6 +294,19 @@ h3 {
     border-radius: 5px;
     width: 100%;
     height: 100%;
+}
+
+.portfolio-sub-thumb {
+    width: 1000px;
+    float: left;
+    margin-top: 7px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-sub-thumb img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 .portfolio-proj-title {
