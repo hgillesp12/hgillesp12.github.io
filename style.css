@@ -121,7 +121,7 @@ h1 {
 }
 
 #profile img {
-    width: 220px;
+    width: 350px;
     border-radius: 10px;
     margin-bottom: 18px;
 }
@@ -277,7 +277,7 @@ h3 {
 }
 
 .portfolio-thumb {
-    width: 350px;
+    width: 500px;
     float: left;
     margin-top: 7px;
     padding-right: 30px;
