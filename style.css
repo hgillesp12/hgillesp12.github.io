@@ -150,8 +150,9 @@ h1 {
 }
 
 .slider {
-    display: flex; /* Key for horizontal scrolling */
-    width: max-content; /* Adjusts based on number of images */
+    display: flex;
+    flex-wrap: nowrap; /* important to keep everything in one line */
+    width: max-content; /* ensures the container expands horizontally as needed */
     align-items: center;
 }
 
