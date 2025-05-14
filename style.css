@@ -157,7 +157,7 @@ h1 {
 }
 
 .slider img {
-    height: 205px;
+    height: 500px;
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -188,7 +188,7 @@ h1 {
 
 .divider {
     width: 100%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 /**************************************************/
