@@ -237,6 +237,19 @@ h3 {
     border-radius: 5px;
 }
 
+.research-thumb {
+    width: 180px;
+    float: left;
+    margin-top: 7px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.research-thumb img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .research-thumb video {
     margin-top: 0.4em;
     border-radius: 5px;
@@ -274,6 +287,19 @@ h3 {
     margin-left: 30px;
     width: 100%;
     display: table;
+}
+
+.portfolio-small-thumb {
+    width: 230px;
+    float: left;
+    margin-top: 7px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-small-thumb img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 .portfolio-thumb {
