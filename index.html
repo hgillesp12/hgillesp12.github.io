@@ -75,13 +75,32 @@
 					<a href="files/Gillespie CV.pdf" target="_blank" rel="noopener noreferrer" class="button-link">
 						<img src="images/buttons/cv.png" alt="View CV">
 					</a>
-					<a href="mailto:hg12@comcast.net" class="button-link" aria-label="Email Hannah">
-						<img src="images/buttons/email.png" alt="Email icon">
-					</a>  
+					<button class="button-link" onclick="openModal()">
+						<img src="images/buttons/email.png" style="width: 90%; height: auto; object-fit: contain" alt="Email icon">
+					</button>
 				</div>
 			</footer>
 		</div>
+		<!-- Modal structure -->
+		<div id="contactModal" class="modal">
+			<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h4 class="contact-form">Contact</h4>
+			<form action="https://formspree.io/f/manovarg" method="POST" class="contact-form">
+				<label for="name">Your name:</label><br>
+				<input type="text" id="name" name="name" required><br><br>
 		
+				<label for="email">Your email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+		
+				<label for="message">Your message:</label><br>
+				<textarea id="message" name="message" rows="6" required></textarea><br><br>
+		
+				<button type="submit" class="contact-button">Send</button>
+			</form>
+			</div>
+		</div>
+  
 		<script>
 			// Cache references
 			const body = document.body;
@@ -112,6 +131,23 @@
 	
 			// Attach event listener to button
 			toggleBtn.addEventListener('click', toggleDarkMode);
+
+			function openModal() {
+				document.getElementById("contactModal").style.display = "flex";
+				document.body.classList.add("modal-open");
+			}
+
+			function closeModal() {
+				document.getElementById("contactModal").style.display = "none";
+				document.body.classList.remove("modal-open");
+			}
+
+			window.onclick = function(event) {
+			  const modal = document.getElementById("contactModal");
+			  if (event.target === modal) {
+				closeModal();
+			  }
+			}
 		</script>
 	</body>
 </html>
