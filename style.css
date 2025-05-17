@@ -439,7 +439,7 @@ body.dark-mode #navbar {
 
 body.dark-mode #footer {
     background-color: #1e1e1e;
-    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
 }
 
 body.dark-mode #navbar a {
@@ -517,7 +517,7 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
     width: 100%;
     background-color: #f8f8f8;  /* Same as navbar */
     border-top: 1px solid #ddd; /* Optional: to match navbar border-bottom */
-    padding: 15px 0;
+    padding: 20px 30px 10px 30px;
     position: relative;
     bottom: 0;
     font-size: 14px;
