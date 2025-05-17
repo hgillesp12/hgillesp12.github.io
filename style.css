@@ -461,12 +461,12 @@ body.dark-mode ul {
 }
 
 body.dark-mode .button-link {
-    background-color: #2196f3;
+    background-color: #ddd;
     color: white;
 }
 
 body.dark-mode .button-link:hover {
-    background-color: #1565c0;
+    background-color: #90caf9;
 }
 
 body.dark-mode .recent-work::-webkit-scrollbar-track {
