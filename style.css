@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
-    font-family: 'Times New Roman', Times, serif;
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: roboto, sans-serif;
     color: #222222;
 }
 
