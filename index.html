@@ -148,6 +148,15 @@
 				closeModal();
 			  }
 			}
+			
+			window.addEventListener('pageshow', function(event) {
+			// 'pageshow' fires even when navigating back to the page.
+			// Ensure the modal is hidden:
+			const modal = document.getElementById('contactModal');
+			if (modal) {
+				modal.style.display = 'none';
+			}
+			});
 		</script>
 	</body>
 </html>
