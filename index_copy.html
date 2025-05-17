@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hannah Gillespie</title>
+        	<meta charset="utf-8" />
+        	<meta name="viewport" content="width=1000">
+        	<link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
+        	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body id="body">
+		<div id="main">
+			<header id="navbar">
+				<a href="index.html">Home</a>
+				<a href="portfolio.html">Portfolio</a>
+				<button id="dark-toggle" class="button-mode">
+					<img id="toggle-icon" src="images/buttons/dark_mode.jpg" alt="Toggle Dark Mode">
+				</button>
+			</header>
+			<div id="profile">
+					<img src="images/hannah_gillespie.jpg" alt="Hannah Gillespie" class="profile-pic">
+					<div id="profile-name">Hannah Gillespie</div>
+					<p>
+						Masters student in Engineering for Sustainable Development at the University of Cambridge. Former Autonomous Systems Engineer 
+						at Boeing in Seattle. Interested in developing robotic systems for applications
+						related to sustainability within the context of human-centered design thinking. Completed the MSc in Computing at 
+						Imperial College London with first-class distinction. Notre Dame (USA) alum from 2020, originally from the Chicagoland area. 
+						<br><br>
+						In my free time, I enjoy <a href="https://youtu.be/9j-zqBvEcPU?si=X3_YPUt8_rtRaA61" target="_blank">rowing on the River Cam</a>, playing Chopin on the piano, and searching
+						for a coffee shop with a La Marzocco espresso machine.
+						</p>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="divider"></div>
+			<div class="section">
+				<h1>News</h1>
+				<p> 
+					<ul>
+						<li> Featured article by Gonville & Caius College at the University of Cambridge describes my <a href="https://www.cai.cam.ac.uk/news/engineering-putting-people-first" target="_blank">engineering ethos</a>
+						<li> Demonstration for the Defense Advanced Research Project Agency (DARPA) at <a href="https://onfirstup.com/boeing/BNN/articles/video-smarter-safer-airplanes-enabled-by-machine-learning-1" target="_blank">Boeing</a> to increase autonomous capabilities on commercial aircraft
+						<li> Honored to be a <a href="https://news.nd.edu/news/alumna-hannah-gillespie-named-2023-marshall-scholar/" target="_blank">2023 Marshall Scholar</a> for two years of study in the United Kingdom
+						<li> Research assistant in the <a href="https://kellogg.nd.edu/hannah-gillespie" target="_blank">International Scholars Program</a> at the University of Notre Dame (2017-2020)
+					</ul>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="divider"></div>
+			<div class="section research">
+				<h1>Publications</h1>
+				<div class="research-proj">
+					<a href="https://hyperlab.nd.edu/people/alumni/hannah-gillespie/" target="_blank" class="research-thumb">
+					<img src="images/publications/background.jpg"/>
+					</a>
+					<a href="https://arc.aiaa.org/doi/10.2514/6.2023-0119" target="_blank" class="research-proj-title">Investigation of a High Speed Inlet/Isolator with Global Surface Measurements and Background Oriented Schlieren</a>
+					<p> Andrew N. Bustard, Tatsunori Hayashi, Jonathan Davami, Hannah G. Gillespie, and Thomas J. Juliano. <br>
+						AIAA SCITECH 2023 Forum
+					</p>
+				</div>
+				<div class="research-proj">
+					<a href="files/ID_299.pdf" target="_blank" class="research-thumb">
+					<img src="images/publications/leogane_map.png"/>
+					</a>
+					<a href="files/ID_299.pdf" target="_blank" class="research-proj-title">Perspectives on Risk Mitigation Among Homeowners Across the Disaster Recovery Life Cycle</a>
+					<p> T. Kijewski-Correa, D. Javeline, A. Chesler, K. Richman, H. Gillespie, A. Taflanidis. <br>
+						2nd International Conference on Natural Hazards & Infrastructure (ICONHIC) 2019
+					</p>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="footer-links">
+					<a href="https://www.linkedin.com/in/hannahgillespie" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/linkedin.png" alt="LinkedIn">
+					</a>
+					<a href="https://github.com/hgillesp12" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/github.png" alt="GitHub">
+					</a>
+					<a href="files/Gillespie CV.pdf" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/cv.png" alt="View CV">
+					</a>
+					<button class="button-link" aria-label="Email Hannah" onclick="openModal()">
+						<img src="images/buttons/email.png" alt="Email icon">
+					</button>
+				</div>
+			</footer>
+		</div>
+		<!-- Modal structure -->
+		<div id="contactModal" class="modal">
+			<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2>Contact</h2>
+			<form action="https://formspree.io/f/manovarg" method="POST" class="contact-form">
+				<label for="name">Your name:</label><br>
+				<input type="text" id="name" name="name" required><br><br>
+		
+				<label for="email">Your email:</label><br>
+				<input type="email" id="email" name="email" required><br><br>
+		
+				<label for="message">Your message:</label><br>
+				<textarea id="message" name="message" rows="6" required></textarea><br><br>
+		
+				<button type="submit" class="contact-button">Send</button>
+			</form>
+			</div>
+		</div>
+  
+		<script>
+			// Cache references
+			const body = document.body;
+			const toggleBtn = document.getElementById('dark-toggle');
+			const toggleIcon = document.getElementById('toggle-icon');
+			const darkIcon = 'images/buttons/dark_mode.jpg'; 
+			const lightIcon = 'images/buttons/light_mode.jpg';   
+			
+			// Load saved preference on page load
+			if (localStorage.getItem('darkMode') === 'enabled') {
+				body.classList.add('dark-mode');
+				toggleIcon.src = lightIcon;  // light icon for light mode
+			} else {
+				toggleIcon.src = darkIcon;  // dark icon for dark mode
+			}
+	
+			// Toggle dark mode function
+			function toggleDarkMode() {
+				body.classList.toggle('dark-mode');
+				if (body.classList.contains('dark-mode')) {
+					localStorage.setItem('darkMode', 'enabled');
+					toggleIcon.src = lightIcon;
+				} else {
+					localStorage.setItem('darkMode', 'disabled');
+					toggleIcon.src = darkIcon;
+				}
+			}
+	
+			// Attach event listener to button
+			toggleBtn.addEventListener('click', toggleDarkMode);
+
+			function openModal() {
+			  document.getElementById("contactModal").style.display = "flex";
+			}
+			
+			function closeModal() {
+			  document.getElementById("contactModal").style.display = "none";
+			}
+			
+			window.onclick = function(event) {
+			  const modal = document.getElementById("contactModal");
+			  if (event.target === modal) {
+				closeModal();
+			  }
+			}
+		</script>
+	</body>
+</html>
