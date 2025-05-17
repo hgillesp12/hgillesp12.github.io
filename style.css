@@ -557,7 +557,7 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5%;
+    border-radius: 50%;
     background-color: #ddd;
     border: none;
     cursor: pointer;
