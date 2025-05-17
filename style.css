@@ -501,8 +501,8 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
   }
   
   .button-link img {
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
   }
 
     
@@ -513,8 +513,8 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
 
   /* Smaller child version */
 .button-link.child {
-    height: 25px;  /* 50% */
-    width: 25px;
+    height: 50%;
+    width: 50%;
   }
 
   /**************************************************/
