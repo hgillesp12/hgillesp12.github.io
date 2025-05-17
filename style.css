@@ -495,8 +495,8 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
   }
   
   .button-link img {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
   }
 
     
