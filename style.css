@@ -423,3 +423,68 @@ h3 {
     }
 }
 
+/* dark mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode a {
+    color: #90caf9;
+}
+
+body.dark-mode a:hover {
+    border-bottom: 1px solid #90caf9;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode #profile-name,
+body.dark-mode .research-proj-title,
+body.dark-mode .portfolio-proj-title {
+    color: #bbdefb;
+}
+
+body.dark-mode #navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode #navbar a {
+    color: #e0e0e0;
+}
+
+body.dark-mode #navbar a:hover {
+    color: #90caf9;
+}
+
+body.dark-mode .divider {
+    border-bottom: 2px solid #444;
+}
+
+body.dark-mode ul {
+    color: #e0e0e0;
+}
+
+body.dark-mode .cv-button {
+    background-color: #2196f3;
+    color: white;
+}
+
+body.dark-mode .cv-button:hover {
+    background-color: #1565c0;
+}
+
+body.dark-mode .recent-work::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body.dark-mode .recent-work::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}

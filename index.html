@@ -6,7 +6,6 @@
         	<meta name="viewport" content="width=1000">
         	<link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
         	<link rel="stylesheet" href="style.css" />
-
 	</head>
 	<body id="body">
 		<div id="main">
@@ -15,6 +14,7 @@
 				<a href="cv.html">CV</a>
 				<a href="portfolio.html">Portfolio</a>
 				<a href="https://github.com/hgillesp12" target="_blank" rel="noopener noreferrer">GitHub</a>
+				<button id="dark-toggle">🌙</button>
 			</header>
 			<div id="profile">
 					<img src="images/hannah_gillespie.jpg" alt="Hannah Gillespie" class="profile-pic">
@@ -55,5 +55,35 @@
 				</div>
 			</div>
 		</div>
+		
+		<script>
+			// Cache references
+			const body = document.body;
+			const toggleBtn = document.getElementById('dark-toggle');
+	
+			// Load saved preference on page load
+			if (localStorage.getItem('darkMode') === 'enabled') {
+				body.classList.add('dark-mode');
+				toggleBtn.textContent = '☀️';  // sun icon for light mode
+			} else {
+				toggleBtn.textContent = '🌙';  // moon icon for dark mode
+			}
+	
+			// Toggle dark mode function
+			function toggleDarkMode() {
+				body.classList.toggle('dark-mode');
+				if (body.classList.contains('dark-mode')) {
+					localStorage.setItem('darkMode', 'enabled');
+					toggleBtn.textContent = '☀️';
+				} else {
+					localStorage.setItem('darkMode', 'disabled');
+					toggleBtn.textContent = '🌙';
+				}
+			}
+	
+			// Attach event listener to button
+			toggleBtn.addEventListener('click', toggleDarkMode);
+		</script>
+	
 	</body>
 </html>
