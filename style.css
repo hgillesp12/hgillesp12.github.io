@@ -438,7 +438,9 @@ h3 {
     margin-bottom: 8px;
 }
 
+.contact-form input[type="text"],
 .contact-form input[type="email"],
+.contact-form input[type="message"],
 .contact-form textarea {
     width: 100%;
     padding: 10px;
