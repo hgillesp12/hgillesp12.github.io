@@ -452,6 +452,8 @@ h3 {
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    font-family: roboto, sans-serif;
+    font-weight: normal;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -485,6 +487,8 @@ body.dark-mode .contact-form textarea {
     /*color: #e0e0e0;*/
     color: #1e1e1e;
     border: 1px solid #444;
+    font-family: roboto, sans-serif;
+    font-weight: normal;
 }
 
 body.dark-mode .contact-form label {
