@@ -488,3 +488,18 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb {
 body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
     background: #777;
 }
+
+/* buttons */
+.button-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ddd; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .button-link:hover {
+    background-color: #005582;
+  }
