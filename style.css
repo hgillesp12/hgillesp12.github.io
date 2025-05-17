@@ -431,11 +431,24 @@ body.dark-mode #navbar {
     border-bottom: 1px solid #444;
 }
 
+body.dark-mode #footer {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444;
+}
+
 body.dark-mode #navbar a {
     color: #e0e0e0;
 }
 
+body.dark-mode #footer a {
+    color: #e0e0e0;
+}
+
 body.dark-mode #navbar a:hover {
+    color: #90caf9;
+}
+
+body.dark-mode #footer a:hover {
     color: #90caf9;
 }
 
