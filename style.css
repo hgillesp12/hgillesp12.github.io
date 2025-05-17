@@ -113,7 +113,7 @@ h3 {
 
 /* NAVIGATION BAR */
 #navbar {
-    width: 100%;
+    width: 120%;
     font-size: 16px;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
@@ -140,7 +140,7 @@ h3 {
   /**************************************************/
 /* FOOTER BAR */
 #footer {
-    width: 100%;
+    width: 120%;
     background-color: #f8f8f8;  /* Same as navbar */
     border-top: 1px solid #ddd; /* Optional: to match navbar border-bottom */
     padding: 10px 30px 20px 30px;
