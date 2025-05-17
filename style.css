@@ -110,9 +110,17 @@ h3 {
     width: 100%;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
-    text-align: right;
     padding: 20px 30px 10px 30px;
     font-size: 14px;
+    
+    display: flex;                /* Flexbox for positioning */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center;           /* Vertically center content */
+}
+
+.left-links, .right-links {
+    display: flex;                /* Flex container for each section */
+    align-items: center;          /* Vertically align items in each section */
 }
 
 #navbar a {
@@ -124,6 +132,18 @@ h3 {
 #navbar a:hover {
     color: #4a85c8;
 }
+
+/* Optional: No left margin on the first link in each section */
+.left-links a:first-child,
+.right-links a:first-child {
+    margin-left: 0;
+}
+
+/* Adjust button spacing */
+#dark-toggle {
+    margin-left: 20px; /* Space between the button and the previous link */
+}
+
 
 /**************************************************/
 
