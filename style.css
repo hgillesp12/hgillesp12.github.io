@@ -489,6 +489,12 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
     width: 70%;
   }
 
+    
+  .button-link img:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
   /**************************************************/
 /* to delete */
 .cv-button {
