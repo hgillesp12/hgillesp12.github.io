@@ -553,9 +553,11 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
   
   .button-mode img {
     height: 90%;
-    width: 90%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain; /* or 'cover' if you want cropping */
+    border-radius: 5px;
+    display: block;
   }
-
     
   .button-mode img:hover {
     background-color: #0056b3;
