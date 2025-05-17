@@ -129,7 +129,6 @@ h3 {
 
 #profile {
     padding: 30px;
-    border-bottom: 1px solid #ddd;
     overflow: hidden; /* Contains floats */
 }
 
