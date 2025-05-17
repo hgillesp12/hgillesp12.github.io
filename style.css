@@ -389,58 +389,21 @@ h3 {
 
 /**************************************************/
 
-/* Nice CV Download Button */
 .cv-button {
     display: inline-block;
-    margin-top: 30px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #003373;
+    background-color: #007BFF;
     color: white;
-    border-radius: 8px;
-    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
     transition: background-color 0.3s;
-}
+  }
+  
+  .cv-button:hover {
+    background-color: #0056b3;
+  }
 
-.cv-button:hover {
-    background-color: #4a85c8;
-    color: white;
-}
-
-.radial-static {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 60px auto;
-    border-radius: 50%;
-  }
-  
-  .radial-static .centerpiece {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 32px;
-  }
-  
-  .radial-static .item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    transform: rotate(calc(var(--i) * 45deg)) translate(150px) rotate(calc(var(--i) * -45deg));
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  
-  .radial-static .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
 
 /**************************************************/
 
