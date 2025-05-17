@@ -386,23 +386,6 @@ h3 {
     font-weight: 700;
 }
 
-/**************************************************/
-
-.cv-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .cv-button:hover {
-    background-color: #0056b3;
-  }
-
 
 /**************************************************/
 
@@ -489,12 +472,36 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
 }
 
 /* buttons */
-.cv-button img {
+.button-link {
+    height: 15px;
+    width: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: #ddd;
     border: none;
-    border-radius: 8px;
-    transition: transform 0.2s ease;
+    cursor: pointer;
   }
   
-  .cv-button img:hover {
-    transform: scale(1.05);
+  .button-link img {
+    height: 70%;
+    width: 70%;
+  }
+
+  /**************************************************/
+/* to delete */
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cv-button:hover {
+    background-color: #0056b3;
   }
