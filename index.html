@@ -12,7 +12,9 @@
 			<header id="navbar">
 				<a href="index.html">Home</a>
 				<a href="portfolio.html">Portfolio</a>
-				<button id="dark-toggle">🌙</button>
+				<button id="dark-toggle" class="button-link">
+					<img src="images/buttons/dark_mode.png" alt="Toggle dark mode" />
+				</button>
 			</header>
 			<div id="profile">
 					<img src="images/hannah_gillespie.jpg" alt="Hannah Gillespie" class="profile-pic">
@@ -58,13 +60,15 @@
 			// Cache references
 			const body = document.body;
 			const toggleBtn = document.getElementById('dark-toggle');
-	
+			const darkIcon = 'images/buttons/dark_mode.png'; 
+			const lightIcon = 'images/buttons/light_mode.png';   
+			
 			// Load saved preference on page load
 			if (localStorage.getItem('darkMode') === 'enabled') {
 				body.classList.add('dark-mode');
-				toggleBtn.textContent = '☀️';  // sun icon for light mode
+				toggleBtn.textContent = lightIcon;  // light icon for light mode
 			} else {
-				toggleBtn.textContent = '🌙';  // moon icon for dark mode
+				toggleBtn.textContent = darkIcon;  // dark icon for dark mode
 			}
 	
 			// Toggle dark mode function
@@ -72,10 +76,10 @@
 				body.classList.toggle('dark-mode');
 				if (body.classList.contains('dark-mode')) {
 					localStorage.setItem('darkMode', 'enabled');
-					toggleBtn.textContent = '☀️';
+					toggleBtn.textContent = lightIcon;
 				} else {
 					localStorage.setItem('darkMode', 'disabled');
-					toggleBtn.textContent = '🌙';
+					toggleBtn.textContent = darkIcon;
 				}
 			}
 	
