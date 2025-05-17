@@ -133,13 +133,15 @@
 			toggleBtn.addEventListener('click', toggleDarkMode);
 
 			function openModal() {
-			  document.getElementById("contactModal").style.display = "flex";
+				document.getElementById("contactModal").style.display = "flex";
+				document.body.classList.add("modal-open");
 			}
-			
+
 			function closeModal() {
-			  document.getElementById("contactModal").style.display = "none";
+				document.getElementById("contactModal").style.display = "none";
+				document.body.classList.remove("modal-open");
 			}
-			
+
 			window.onclick = function(event) {
 			  const modal = document.getElementById("contactModal");
 			  if (event.target === modal) {
