@@ -493,12 +493,12 @@ body.dark-mode ul {
     color: #e0e0e0;
 }
 
-body.dark-mode .button-link {
+body.dark-mode .button-link .button-mode {
     background-color: #ddd;
     color: white;
 }
 
-body.dark-mode .button-link:hover {
+body.dark-mode .button-link:hover .button-mode:hover{
     background-color: #90caf9;
 }
 
@@ -538,8 +538,27 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
     transform: scale(1.1);
   }
 
-  /* Smaller child version */
-.button-link.child {
+
+.button-mode {
     height: 25px;
     width: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
   }
+  
+  .button-mode img {
+    height: 90%;
+    width: 90%;
+  }
+
+    
+  .button-mode img:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+
