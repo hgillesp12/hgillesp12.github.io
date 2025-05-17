@@ -505,7 +505,6 @@ body.dark-mode .contact-button:hover {
     background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
     backdrop-filter: blur(6px); /* blur the background */
     -webkit-backdrop-filter: blur(6px); /* Safari support */
-    display: flex;
     justify-content: center;
     align-items: center;
   }
