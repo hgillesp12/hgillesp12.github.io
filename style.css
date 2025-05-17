@@ -506,8 +506,12 @@ body.dark-mode .button-link .button-mode {
     color: white;
 }
 
-body.dark-mode .button-link:hover .button-mode:hover{
+body.dark-mode .button-link:hover {
     background-color: #90caf9;
+}
+
+body.dark-mode .button-mode:hover {
+    background-color: #ddd;
 }
 
 body.dark-mode .recent-work::-webkit-scrollbar-track {
@@ -566,7 +570,7 @@ body.dark-mode .recent-work::-webkit-scrollbar-thumb:hover {
   }
     
   .button-mode img:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
+    background-color: #ddd;
+    transform: scale(1.5);
   }
 
