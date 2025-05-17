@@ -110,6 +110,7 @@ h3 {
 #navbar {
     /*width: 100%;*/
     width: 100vw;
+    font-size: 16px;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     text-align: right;
