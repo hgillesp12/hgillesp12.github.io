@@ -266,7 +266,7 @@ button {
 
 .divider {
     width: 100%;
-    border-bottom: 2px solid #ddd; 
+    border-bottom: 1px solid #ddd; 
 }
 
 /**************************************************/
@@ -631,7 +631,7 @@ body.dark-mode #footer a:hover {
 }
 
 body.dark-mode .divider {
-    border-bottom: 2px solid #444;
+    border-bottom: 1px solid #444;
 }
 
 body.dark-mode ul {
