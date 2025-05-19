@@ -425,13 +425,13 @@ h3 {
 }
 
 .portfolio-proj-link {
-    display: inline-block;
+    display: inline-block;       
     font-size: 24px;
     line-height: 24px;
-    width: 100%;
-    margin: 30px auto 20px 0px;
-    color: #003373; 
+    color: #003373;
     font-style: italic;
+    margin: 30px 0 20px 0;       
+    text-decoration: none;     
 }
 
 .portfolio-proj-link:hover {
