@@ -425,6 +425,19 @@ h3 {
     border-bottom: 1px solid #003373;
 }
 
+.portfolio-proj-link {
+    font-size: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 30px auto 20px 30px;
+    color: #003373; 
+    font-style: italic;
+}
+
+.portfolio-proj-link:hover {
+    border-bottom: 1px solid #003373;
+}
+
 .portfolio-proj p {
     font-size: 14px;
     line-height: 24px;
@@ -587,7 +600,7 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode #profile-name,
 body.dark-mode .research-proj-title,
-body.dark-mode .portfolio-proj-title {
+body.dark-mode .portfolio-proj-title .portfolio-proj-link {
     color: #bbdefb;
 }
 
