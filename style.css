@@ -564,21 +564,7 @@ body.dark-mode .contact-button:hover {
 
 /**************************************************/
 
-/* Small responsive improvements */
-@media screen and (max-width: 1000px) {
-    #main {
-        width: 90%;
-    }
 
-    #profile-pic, #profile-intro {
-        float: none;
-        text-align: center;
-    }
-
-    #profile img {
-        width: 180px;
-    }
-}
 
 /* dark mode */
 
