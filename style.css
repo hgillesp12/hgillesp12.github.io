@@ -426,7 +426,7 @@ h3 {
 }
 
 .portfolio-proj-link {
-    display: block;
+    display: inline-block;
     font-size: 24px;
     line-height: 24px;
     width: 100%;
