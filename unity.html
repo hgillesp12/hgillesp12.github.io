@@ -50,7 +50,99 @@
                     </div>
                 </div>
 			</div>
+            <footer id="footer">
+				<div class="footer-links">
+					<a href="https://www.linkedin.com/in/hannahgillespie" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/linkedin.png" alt="LinkedIn">
+					</a>
+					<a href="https://github.com/hgillesp12" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/github.png" alt="GitHub">
+					</a>
+					<a href="files/Gillespie CV.pdf" target="_blank" rel="noopener noreferrer" class="button-link">
+						<img src="images/buttons/cv.png" alt="View CV">
+					</a>
+					<button class="button-link" onclick="openModal()">
+						<img src="images/buttons/email.png" alt="Email icon">
+					</button>
+				</div>
+			</footer>
 		</div>
+	<!-- Modal structure -->
+	<div id="contactModal" class="modal">
+		<div class="modal-content">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<h1 class="contact-heading">Contact</h1>
+		<form action="https://formspree.io/f/manovarg" method="POST" class="contact-form">
+			<label for="name">Your name:</label><br>
+			<input type="text" id="name" name="name" required><br><br>
+	
+			<label for="email">Your email:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+	
+			<label for="message">Your message:</label><br>
+			<textarea id="message" name="message" rows="6" required></textarea><br><br>
+	
+			<button type="submit" class="contact-button">Send</button>
+		</form>
+		</div>
+	</div>
+    <script>
+		// Cache references
+		const body = document.body;
+		const toggleBtn = document.getElementById('dark-toggle');
+		const toggleIcon = document.getElementById('toggle-icon');
+		const darkIcon = 'images/buttons/dark_mode.jpg'; 
+		const lightIcon = 'images/buttons/light_mode.jpg';   
+		
+		// Load saved preference on page load
+		if (localStorage.getItem('darkMode') === 'enabled') {
+			body.classList.add('dark-mode');
+			toggleIcon.src = lightIcon;  // light icon for light mode
+		} else {
+			toggleIcon.src = darkIcon;  // dark icon for dark mode
+		}
+
+		// Toggle dark mode function
+		function toggleDarkMode() {
+			body.classList.toggle('dark-mode');
+			if (body.classList.contains('dark-mode')) {
+				localStorage.setItem('darkMode', 'enabled');
+				toggleIcon.src = lightIcon;
+			} else {
+				localStorage.setItem('darkMode', 'disabled');
+				toggleIcon.src = darkIcon;
+			}
+		}
+
+		// Attach event listener to button
+		toggleBtn.addEventListener('click', toggleDarkMode);
+
+		function openModal() {
+			document.getElementById("contactModal").style.display = "flex";
+			document.body.classList.add("modal-open");
+		}
+
+		function closeModal() {
+			document.getElementById("contactModal").style.display = "none";
+			document.body.classList.remove("modal-open");
+		}
+
+		window.onclick = function(event) {
+		  const modal = document.getElementById("contactModal");
+		  if (event.target === modal) {
+			closeModal();
+		  }
+		}
+		
+		window.addEventListener('pageshow', function(event) {
+		// 'pageshow' fires even when navigating back to the page.
+		// Ensure the modal is hidden:
+		const modal = document.getElementById('contactModal');
+		if (modal) {
+			modal.style.display = 'none';
+		}
+		});
+	</script>
 	</body>
 </html>
 
