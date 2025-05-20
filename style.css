@@ -441,6 +441,7 @@ h3 {
 .portfolio-proj p {
     font-size: 16px;
     line-height: 24px;
+    text-align: justify;
 }
 
 .portfolio-proj p strong {
