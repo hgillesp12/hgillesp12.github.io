@@ -4,10 +4,11 @@
   "private": true,
   "homepage": "https://hgillesp12.github.io/hgillesp12.github.io",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "gh-pages": "^5.0.0"
+    "react-scripts": "^3.0.1",
+    "web-vitals": "^5.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,10 +19,17 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
