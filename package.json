@@ -2,12 +2,12 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hgillesp12.github.io/hgillesp12.github.io",
+  "homepage": "https://hgillesp12.github.io",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^5.0.2"
   },
   "scripts": {
