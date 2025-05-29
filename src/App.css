@@ -1,0 +1,335 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+}
+
+.App-logo {
+  height: 40px; /* Reduced from default size */
+  width: auto;
+}
+.App-logo {
+  height: 40px;
+  width: auto;
+}
+
+.App-logo:hover {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+main {
+  padding-top: 80px; /* Adjust based on your header height */
+  padding-bottom: 100px; /* Make room for footer */
+  min-height: calc(100vh - 180px); /* Adjust for header and footer */
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-footer {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.spotify-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.spotify-section h2 {
+  color: #B0D7FF;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.spotify-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  max-width: 900px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.profile-image:hover {
+  animation: shimmy 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@keyframes shimmy {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+}
+
+.profile-text {
+  text-align: left;
+  color: white;
+}
+
+.profile-text h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+  
+.profile-text h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 4rem;
+  color: #B0D7FF;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.profile-text h2:hover {
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); scale: 1.05; }
+  75% { transform: rotate(-1deg); scale: 1.05; }
+}
+
+.profile-text p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  max-width: 600px; /* Limits the width of the paragraph */
+  text-align: justify; /* Justifies the text for a cleaner look */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better readability */
+  font-weight: 300; /* Makes the text lighter */
+  font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
+  margin-top: 1rem; /* Adds space above the paragraph */
+  margin-bottom: 1rem; /* Adds space below the paragraph */
+ 
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the text and icon horizontally */
+  gap: 8px; /* Adds spacing between the icon and text */
+  padding: 10px 20px;
+  font-size: 18px; /* Makes the text bigger */
+  font-weight: bold; /* Makes the text bold (optional) */
+  cursor: pointer;
+  border: 1px solid #ccc; /* Adds a border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for hover and click effects */
+  background-color: #D8D5DB; /* Button background color */
+  color: black; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Ensures text is centered */
+  text-decoration: none;
+}
+
+.button-icon {
+  width: 24px; /* Adjust the size of the icon */
+  height: 24px;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+/* Optional: If you want to ensure no underline even on hover */
+.button-link:hover {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #ADACB5; /* Darker shade on hover */
+}
+
+.button:active {
+  background-color: #7d7d83; /* Even darker shade on click */
+}
+ 
+.button-panel {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button {
+  flex: 1 1 auto; /* Ensures buttons are evenly spaced */
+  max-width: 200px; /* Optional: Limits the width of each button */
+  text-decoration: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  text-align: center;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem; /* Increased from 0.9rem */
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start; /* Ensures children (including labels) are left-aligned */
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-bottom: 0.5rem; /* Adds space between inputs */
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  padding: 0.5rem;
+}
+
+.modal-close:hover {
+  color: #ff0000;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

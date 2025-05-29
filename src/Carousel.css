@@ -1,0 +1,164 @@
+.carousel-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+    padding: 2rem 0;
+    overflow: hidden;
+  }
+  
+  .carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-icon {
+    font-size: 2.5rem; /* Reduced from 3rem */
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-image {
+    width: 275px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover .carousel-image img {
+    transform: scale(1.1);
+  }
+  
+
+  .carousel-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #B0D7FF;
+  }
+  
+  .carousel-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .carousel-item {
+    min-width: 275px; /* Reduced from 300px */
+    padding: 1.5rem; /* Reduced padding */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    animation: shimmy 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  @keyframes shimmy {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    75% { transform: rotate(-2deg); }
+  }
+
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 1rem)); /* Adjust based on gap */
+    }
+  }
+  
+  /* Pause on hover */
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+  
+  /* Optional: Add gradient masks for smooth fade in/out */
+  .carousel-section::before,
+  .carousel-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+  }
+  
+  .carousel-section::before {
+    left: 0;
+    background: linear-gradient(to right, #282c34, transparent);
+  }
+  
+  .carousel-section::after {
+    right: 0;
+    background: linear-gradient(to left, #282c34, transparent);
+  }
+
+  .carousel-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .carousel-tag-button {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: white;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(176, 215, 255, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .carousel-tag-button:hover {
+    background: rgba(176, 215, 255, 0.2);
+    transform: translateY(-1px);
+    color: white;
+  }
+  
+  .carousel-tag-button:active {
+    transform: translateY(0);
+  }
