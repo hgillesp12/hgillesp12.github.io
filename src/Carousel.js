@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { } from 'react';
 import './Carousel.css';
 import experienceGif from './gifs/rowing.gif';
 import speakingGif from './gifs/speaking.gif';

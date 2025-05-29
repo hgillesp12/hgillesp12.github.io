@@ -56,6 +56,7 @@ function App() {
           <h2>What I'm Listening To</h2>
           <div className="spotify-container">
             <iframe 
+              title="Spotify Playlist"
               style={{borderRadius: "12px"}} 
               src="https://open.spotify.com/embed/playlist/15uaOjPbmgBRnhpIUgm0AA?utm_source=generator" 
               width="100%" 
