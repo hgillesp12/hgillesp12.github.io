@@ -28,6 +28,9 @@ jobs:
       env:
         CI: false
 
+    - name: Clear gh-pages cache
+      run: rm -rf node_modules/.cache/gh-pages
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
