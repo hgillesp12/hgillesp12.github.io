@@ -258,3 +258,100 @@
     25% { transform: rotate(2deg); }
     75% { transform: rotate(-2deg); }
   }
+
+
+  /* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    padding: 1rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .portfolio-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-modal {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .project-flags,
+  .modal-button-panel {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .project-location {
+    font-size: 0.7rem;
+  }
+
+  .modal-button {
+    width: auto;
+    min-height: 36px;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .project-content {
+    max-height: calc(80vh - 4rem);
+  }
+
+  .project-tags {
+    gap: 0.3rem;
+  }
+
+  .tag {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-section h3 {
+    font-size: 1.75rem;
+  }
+
+  .tile-overlay h3 {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  .project-modal img {
+    max-height: 40vh;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+  }
+}

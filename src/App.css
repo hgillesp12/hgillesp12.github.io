@@ -327,3 +327,101 @@ main {
 .submit-button:hover {
   background-color: #0056b3;
 }
+
+/* Add these media queries at the end of your App.css file */
+
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  .App-header {
+    padding: 0.5rem 1rem;
+  }
+
+  .App-header h1 {
+    font-size: 1.2rem;
+  }
+
+  /* Main content adjustments */
+  main {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  /* Profile section adjustments */
+  .profile-section {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-text h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .profile-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* Button panel adjustments */
+  .button-panel {
+    gap: 8px;
+  }
+
+  .button {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* Spotify section adjustments */
+  .spotify-section {
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .spotify-section h2 {
+    font-size: 2rem;
+  }
+
+  .spotify-container {
+    padding: 1rem;
+  }
+
+  /* Modal adjustments */
+  .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .contact-form label {
+    font-size: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .profile-text h2 {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+}
