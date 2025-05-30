@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './icons/logo.svg';
 import profileImage from './images/header/hannah_gillespie.jpg';
 import linkIcon from './icons/link.svg';
 import CVLink from './docs/CV.pdf';
@@ -32,7 +31,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="header-content">
-          <img src={logo} className="App-logo" alt="logo" />
         </div>
         <div className="header-divider"></div>
       </header>
@@ -72,6 +70,7 @@ function App() {
         {showContactForm && <ContactForm onClose={() => setShowContactForm(false)} />}
       </main>
       <footer className="App-footer">
+        <div className="footer-divider"></div>
         <nav className="button-panel">
           <Button icon={linkIcon} text="LinkedIn" link="https://www.linkedin.com/in/hannahgillespie/" />
           <Button icon={linkIcon} text="CV / Resume" link={CVLink} />

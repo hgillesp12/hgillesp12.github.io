@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ADACB5;
   padding: 0.5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -29,28 +29,6 @@
   );
 }
 
-.App-logo {
-  height: 40px; /* Reduced from default size */
-  width: auto;
-}
-.App-logo {
-  height: 40px;
-  width: auto;
-}
-
-.App-logo:hover {
-  animation: spin 3s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .App-header h1 {
   color: white;
   margin: 0;
@@ -58,22 +36,37 @@
 }
 
 main {
-  padding-top: 80px; /* Adjust based on your header height */
+  padding-top: 70px; /* Adjust based on your header height */
   padding-bottom: 100px; /* Make room for footer */
   min-height: calc(100vh - 180px); /* Adjust for header and footer */
-  background-color: #282c34;
+  background-color: #D8D5DB;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .App-footer {
-  background-color: #282c34;
+  background-color: #ADACB5;
   padding: 1rem 2rem;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 100;
+}
+
+.footer-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
 }
 
 .spotify-section {
@@ -84,14 +77,14 @@ main {
 }
 
 .spotify-section h2 {
-  color: #B0D7FF;
+  color: rgb(61, 61, 61, 0.8);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .spotify-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: #ADACB5;
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(5px);
@@ -102,10 +95,10 @@ main {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #ADACB5;
   padding: 2rem;
   border-radius: 12px;
-  margin: 2rem;
+  margin: 3rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   max-width: 900px;
@@ -116,7 +109,7 @@ main {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
+  border: 3px solid #daedff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
@@ -134,7 +127,7 @@ main {
 
 .profile-text {
   text-align: left;
-  color: white;
+  color: rgb(100, 100, 100);
 }
 
 .profile-text h1 {
@@ -145,8 +138,9 @@ main {
 .profile-text h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 4rem;
-  color: #B0D7FF;
-  margin-bottom: 1rem;
+  color: #daedff;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.02em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   position: relative;
@@ -168,10 +162,10 @@ main {
   margin: 0;
   line-height: 1.6;
   font-size: 1.1rem;
-  color: #f0f0f0;
+  color: rgb(61, 61, 61, 0.8);
   max-width: 600px; /* Limits the width of the paragraph */
   text-align: justify; /* Justifies the text for a cleaner look */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better readability */
+  /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better readability */
   font-weight: 300; /* Makes the text lighter */
   font-family: 'Arial', sans-serif; /* Sets a clean, modern font */
   margin-top: 1rem; /* Adds space above the paragraph */
