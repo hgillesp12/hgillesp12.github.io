@@ -70,7 +70,7 @@ export default function Hero() {
           </Button>
           <Button variant="ghost" size="icon" asChild>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/hannahgillespie/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
