@@ -139,7 +139,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="text-foreground">San Francisco, CA</p>
+                    <p className="text-foreground">Cambridge, UK</p>
                   </div>
                 </div>
               </CardContent>
@@ -162,7 +162,7 @@ export default function Contact() {
                 </Button>
                 <Button variant="outline" className="w-full justify-start" asChild>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/hannahgillespie/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
