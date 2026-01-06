@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, Calendar, MapPin, User } from "lucide-react";
 
 export default function Publications() {
-  const publications = [
+    const publications = [
     {
       title: "Perspectives on Risk Mitigation Among Homeowners Across the Disaster Recovery Life Cycle",
       authors: "T. Kijewski-Correa, D. Javeline, A. Chesler, K. Richman, H. Gillespie, A. Taflanidis",
@@ -10,14 +10,15 @@ export default function Publications() {
       date: "23-26 June, 2019",
       location: "Chania, Greece",
       institution: "University of Notre Dame",
+      link: "https://drive.google.com/file/d/1yjBAS4F-QQt9T5p3Q2IfQ4JJ6h0AEZsq/view",
     },
     {
       title: "Investigation of a High Speed Inlet/Isolator with Global Surface Measurements and Background Oriented Schlieren",
-      authors: "A. Bustard, T. Hayashi, H. Gillespie, T.J. Juliano",
+      authors: "A. Bustard, H. Gillespie, J. Crane, S. Tan, and T. Juliano",
       venue: "AIAA SCITECH 2023 Forum",
       date: "January 2023",
       location: "National Harbor, Maryland",
-        link: "https://arc.aiaa.org/doi/10.2514/6.2023-0119",
+      link: "https://arc.aiaa.org/doi/10.2514/6.2023-0119",
     },
   ];
 
