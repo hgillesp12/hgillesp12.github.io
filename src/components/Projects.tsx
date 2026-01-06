@@ -27,6 +27,14 @@ export default function Projects() {
           { label: "Presentation", href: "https://drive.google.com/file/d/1Ef2tnZcB19WXntpJwtl0GVi0ranJ10DQ/view", icon: ExternalLink },
         ],
       },
+      {
+        title: "Perception-Based Navigation",
+        description: "Autonomous navigation system developed using ROS1 and Machine Learning for real-time perception and path planning in complex environments.",
+        technologies: ["ROS1", "Python", "Machine Learning", "Docker", "Git", "SQL"],
+        countries: [],
+        image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/Boeing.281c5d7a236f475054ff-1767700647373.png?width=8000&height=8000&resize=contain",
+        links: [],
+      },
         {
           title: "Low-Cost Biosand Filter",
           description: "Community-led development of an effective, low-cost biosand filter for clean water in Haiti, reducing costs by 50% compared to traditional designs.",
