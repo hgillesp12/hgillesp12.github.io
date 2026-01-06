@@ -19,8 +19,11 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 flex justify-center">
-          <Avatar className="h-32 w-32 border-4 border-primary/20">
-            <AvatarImage src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop" />
+            <Avatar className="h-48 w-48 border-4 border-primary/20 shadow-xl">
+              <AvatarImage 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/1762187849939-1767698093761.jpeg?width=8000&height=8000&resize=contain" 
+                className="object-cover"
+              />
             <AvatarFallback className="text-3xl font-bold">HG</AvatarFallback>
           </Avatar>
         </div>
