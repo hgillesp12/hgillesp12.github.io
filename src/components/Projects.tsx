@@ -41,7 +41,7 @@ export default function Projects() {
         {
           title: "Low-Cost Biosand Filter",
           description: "Community-led development of an effective, low-cost biosand filter for clean water in Haiti, reducing costs by 50% compared to traditional designs.",
-          technologies: ["Design Thinking", "Surveys", "Community Engagement", "Focus Groups", "Brainstorming"],
+          technologies: ["Design Thinking", "Surveys", "Community Engagement", "Focus Groups"],
           countries: ["🇺🇸", "🇭🇹"],
           image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/biosand.4d7357c4034aee8eb51d-1767698949669.png?width=8000&height=8000&resize=contain",
           links: [
