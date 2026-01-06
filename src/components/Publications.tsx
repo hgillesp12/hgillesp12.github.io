@@ -27,14 +27,16 @@ export default function Publications() {
         title: "Fastener Collar Retainer",
         id: "US20230030042A1",
         date: "Feb 2023",
+        status: "Patent Pending",
         link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
       },
         {
           title: "Runway Incursion Detection",
           id: "US20250124796A1",
-        date: "April 2025",
-        link: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE",
-      },
+          date: "April 2025",
+          status: "Patent Pending",
+          link: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE",
+        },
     ];
 
 
@@ -108,7 +110,14 @@ export default function Publications() {
             {patents.map((patent, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow border-l-4 border-l-primary">
                 <CardHeader>
-                  <CardTitle className="text-lg leading-tight">{patent.title}</CardTitle>
+                  <div className="flex justify-between items-start gap-4">
+                    <CardTitle className="text-lg leading-tight">{patent.title}</CardTitle>
+                    {patent.status && (
+                      <span className="text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-2 py-1 rounded-full whitespace-nowrap">
+                        {patent.status}
+                      </span>
+                    )}
+                  </div>
                   <div className="flex items-center gap-4 mt-2">
                     <span className="text-sm font-mono bg-muted px-2 py-0.5 rounded text-muted-foreground">
                       {patent.id}
