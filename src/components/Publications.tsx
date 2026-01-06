@@ -17,7 +17,7 @@ export default function Publications() {
       venue: "AIAA SCITECH 2023 Forum",
       date: "January 2023",
       location: "National Harbor, Maryland",
-      link: "https://doi.org/10.2514/6.2023-0105",
+        link: "https://arc.aiaa.org/doi/10.2514/6.2023-0119",
     },
   ];
 
