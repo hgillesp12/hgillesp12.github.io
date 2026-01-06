@@ -90,7 +90,7 @@ export default function Hero() {
           </Button>
           <Button variant="ghost" size="icon" asChild>
             <a
-              href="/resume.pdf"
+                href="/Gillespie-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Resume"
