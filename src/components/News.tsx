@@ -68,7 +68,7 @@ export default function News() {
                       <span>•</span>
                       <span>{item.date}</span>
                     </div>
-                    <CardTitle className="text-2xl pt-1">{item.title}</CardTitle>
+                    <CardTitle className="text-xl pt-1">{item.title}</CardTitle>
                   </div>
                   <div className="p-2 bg-primary/10 rounded-lg shrink-0">
                     {item.icon}
