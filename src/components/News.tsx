@@ -2,16 +2,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Newspaper, Award, Sparkles } from "lucide-react";
 
 export default function News() {
-  const newsItems = [
-    {
-      title: "Alumna Hannah Gillespie Named 2023 Marshall Scholar",
-      source: "Notre Dame News",
-      date: "December 2022",
-      description: "Hannah Gillespie is one of 40 Marshall Scholars for 2023, selected from a pool of nearly 1,000 applicants. She is the 10th Marshall Scholar in Notre Dame's history.",
-      link: "https://news.nd.edu/news/alumna-hannah-gillespie-named-2023-marshall-scholar/",
-      icon: <Award className="h-6 w-6 text-primary" />,
-    },
-  ];
+    const newsItems = [
+      {
+        title: "The 2023 Class of Marshall Scholars Has Been Selected",
+        source: "Forbes",
+        date: "December 2022",
+        description: "Hannah Gillespie is featured as one of the 40 American students selected for the prestigious 2023 class of Marshall Scholars.",
+        link: "https://www.forbes.com/sites/michaeltnietzel/2022/12/14/the-2023-class-of-marshall-scholars-has-been-selected/",
+        icon: <Award className="h-6 w-6 text-primary" />,
+      },
+      {
+        title: "Alumna Hannah Gillespie Named 2023 Marshall Scholar",
+        source: "Notre Dame News",
+        date: "December 2022",
+        description: "Hannah Gillespie is one of 40 Marshall Scholars for 2023, selected from a pool of nearly 1,000 applicants. She is the 10th Marshall Scholar in Notre Dame's history.",
+        link: "https://news.nd.edu/news/alumna-hannah-gillespie-named-2023-marshall-scholar/",
+        icon: <Award className="h-6 w-6 text-primary" />,
+      },
+    ];
 
   const designEthos = {
     title: "Design Ethos",
