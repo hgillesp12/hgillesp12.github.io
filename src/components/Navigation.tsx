@@ -21,7 +21,6 @@ export default function Navigation() {
       { name: "About", href: "#about" },
       { name: "Projects", href: "#projects" },
         { name: "Publications & Patents", href: "#publications" },
-      { name: "Experience", href: "#experience" },
       { name: "Contact", href: "#contact" },
     ];
 
