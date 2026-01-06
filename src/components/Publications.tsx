@@ -21,13 +21,13 @@ export default function Publications() {
       date: "January 2023",
         location: "National Harbor, Maryland",
         link: "https://arc.aiaa.org/doi/10.2514/6.2023-0119",
-        image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/image-1740685938171.png?width=8000&height=8000&resize=contain",
+        image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/image-1740686419041.png?width=8000&height=8000&resize=contain",
       },
   ];
 
     const patents = [
       {
-        title: "Fastener Collar Retainer",
+        title: "Fastener Collar Retainer (Granted Patent)",
         id: "US20230030042A1",
         date: "Feb 2023",
         status: "Granted Patent",
