@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Globe, Youtube } from "lucide-react";
+import { ExternalLink, Github, Globe, Youtube, FileText, Layout, PlayCircle } from "lucide-react";
 
 export default function Projects() {
     const projects = [
@@ -25,6 +25,18 @@ export default function Projects() {
         links: [
           { label: "Code", href: "https://github.com/hgillesp12/aod_detection", icon: Github },
           { label: "Presentation", href: "https://drive.google.com/file/d/1Ef2tnZcB19WXntpJwtl0GVi0ranJ10DQ/view", icon: ExternalLink },
+        ],
+      },
+      {
+        title: "Low-Cost Biosand Filter",
+        description: "Community-led development of an effective, low-cost biosand filter for clean water in Haiti, reducing costs by 50% compared to traditional designs.",
+        technologies: ["Design Thinking", "Surveys", "Community Engagement", "Focus Groups", "Brainstorming"],
+        countries: ["🇺🇸", "🇭🇹"],
+        image: "https://images.unsplash.com/photo-1594498653385-d5172c532c00?auto=format&fit=crop&q=80&w=800",
+        links: [
+          { label: "Report", href: "https://drive.google.com/file/d/1czG3Y70wmantKdLoLGAqWXtHatk_hEoD/view", icon: FileText },
+          { label: "Drawings", href: "https://drive.google.com/file/d/14y5yQC43v9PzKJDg2grmD1mpmC8Bhmp7/view", icon: Layout },
+          { label: "Animation", href: "https://drive.google.com/file/d/1CZxzM0aOFClfZxVuxBSNP3Ysvg0ea4_5/view", icon: PlayCircle },
         ],
       },
     ];
