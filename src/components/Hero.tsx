@@ -38,8 +38,7 @@ export default function Hero() {
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
           Passionate about building elegant solutions to complex problems.
-          Specializing in full-stack development, system design, and creating
-          impactful user experiences.
+          Specializing in autonomous systems engineering, human-centered design, and engineering for international development.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-8">
