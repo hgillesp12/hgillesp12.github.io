@@ -95,16 +95,17 @@ export default function Contact() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Your message..."
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    disabled={isSubmitting}
-                  />
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="Your message..."
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      minLength={10}
+                      disabled={isSubmitting}
+                    />
                 </div>
                 <Button type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
