@@ -50,9 +50,13 @@ export default function News() {
               <CardTitle className="text-2xl">{designEthos.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed italic">
-                "{designEthos.content}"
-              </p>
+                <p className="text-muted-foreground leading-relaxed italic">
+                  "{designEthos.content}"
+                </p>
+                <cite className="block mt-4 text-xs text-muted-foreground not-italic border-t pt-2">
+                  — From "Engineering: putting people first", University of Cambridge
+                </cite>
+
             </CardContent>
           </Card>
 
