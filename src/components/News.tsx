@@ -4,6 +4,14 @@ import { ExternalLink, Newspaper, Award, Sparkles } from "lucide-react";
 export default function News() {
     const newsItems = [
       {
+        title: "Engineering: putting people first",
+        source: "University of Cambridge",
+        date: "May 2024",
+        description: "An in-depth look at Hannah's empathetic approach to engineering, her work in Haiti, and her journey as a Marshall Scholar at Cambridge.",
+        link: "https://www.cai.cam.ac.uk/news/engineering-putting-people-first",
+        icon: <Sparkles className="h-6 w-6 text-primary" />,
+      },
+      {
         title: "The 2023 Class of Marshall Scholars Has Been Selected",
         source: "Forbes",
         date: "December 2022",
@@ -15,7 +23,7 @@ export default function News() {
         title: "Alumna Hannah Gillespie Named 2023 Marshall Scholar",
         source: "Notre Dame News",
         date: "December 2022",
-        description: "Hannah Gillespie is one of 40 Marshall Scholars for 2023, selected from a pool of nearly 1,000 applicants. She is the 10th Marshall Scholar in Notre Dame's history.",
+        description: "Hannah is recognized as Notre Dame's 10th Marshall Scholar, highlighting her commitment to mechanical engineering and international development.",
         link: "https://news.nd.edu/news/alumna-hannah-gillespie-named-2023-marshall-scholar/",
         icon: <Award className="h-6 w-6 text-primary" />,
       },
@@ -23,7 +31,7 @@ export default function News() {
 
   const designEthos = {
     title: "Design Ethos",
-    content: "Combining technical engineering expertise with human-centered design thinking to create sustainable international development solutions. True solutions must be economically viable and maintained by the community independent of external teams.",
+    content: "Engineering is about more than technology; it's about people. My approach centers on human-centered design that respects the dignity of every person, ensuring solutions for sustainable development are economically viable and community-driven.",
     icon: <Sparkles className="h-6 w-6 text-primary" />,
   };
 
