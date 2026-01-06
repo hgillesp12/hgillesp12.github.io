@@ -31,7 +31,7 @@ export default function News() {
 
   const designEthos = {
     title: "Design Ethos",
-    content: "Engineering is about more than technology; it's about people. My approach centers on human-centered design that respects the dignity of every person, ensuring solutions for sustainable development are economically viable and community-driven.",
+    content: "Engineering is about more than technology; it's about people. I take a human-centered design approach that respects the dignity of every person, ensuring solutions for sustainable development are economically viable and community-driven.",
     icon: <Sparkles className="h-6 w-6 text-primary" />,
   };
 
@@ -53,9 +53,6 @@ export default function News() {
                 <p className="text-muted-foreground leading-relaxed italic">
                   "{designEthos.content}"
                 </p>
-                <cite className="block mt-4 text-xs text-muted-foreground not-italic border-t pt-2">
-                  — From "Engineering: putting people first", University of Cambridge
-                </cite>
 
             </CardContent>
           </Card>
