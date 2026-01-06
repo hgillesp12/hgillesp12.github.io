@@ -27,18 +27,18 @@ export default function Projects() {
           { label: "Presentation", href: "https://drive.google.com/file/d/1Ef2tnZcB19WXntpJwtl0GVi0ranJ10DQ/view", icon: ExternalLink },
         ],
       },
-      {
-        title: "Low-Cost Biosand Filter",
-        description: "Community-led development of an effective, low-cost biosand filter for clean water in Haiti, reducing costs by 50% compared to traditional designs.",
-        technologies: ["Design Thinking", "Surveys", "Community Engagement", "Focus Groups", "Brainstorming"],
-        countries: ["🇺🇸", "🇭🇹"],
-        image: "https://images.unsplash.com/photo-1594498653385-d5172c532c00?auto=format&fit=crop&q=80&w=800",
-        links: [
-          { label: "Report", href: "https://drive.google.com/file/d/1czG3Y70wmantKdLoLGAqWXtHatk_hEoD/view", icon: FileText },
-          { label: "Drawings", href: "https://drive.google.com/file/d/14y5yQC43v9PzKJDg2grmD1mpmC8Bhmp7/view", icon: Layout },
-          { label: "Animation", href: "https://drive.google.com/file/d/1CZxzM0aOFClfZxVuxBSNP3Ysvg0ea4_5/view", icon: PlayCircle },
-        ],
-      },
+        {
+          title: "Low-Cost Biosand Filter",
+          description: "Community-led development of an effective, low-cost biosand filter for clean water in Haiti, reducing costs by 50% compared to traditional designs.",
+          technologies: ["Design Thinking", "Surveys", "Community Engagement", "Focus Groups", "Brainstorming"],
+          countries: ["🇺🇸", "🇭🇹"],
+          image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/biosand.4d7357c4034aee8eb51d-1767698949669.png?width=8000&height=8000&resize=contain",
+          links: [
+            { label: "Report", href: "https://drive.google.com/file/d/1czG3Y70wmantKdLoLGAqWXtHatk_hEoD/view", icon: FileText },
+            { label: "Drawings", href: "https://drive.google.com/file/d/14y5yQC43v9PzKJDg2grmD1mpmC8Bhmp7/view", icon: Layout },
+            { label: "Animation", href: "https://drive.google.com/file/d/1CZxzM0aOFClfZxVuxBSNP3Ysvg0ea4_5/view", icon: PlayCircle },
+          ],
+        },
     ];
 
     return (
