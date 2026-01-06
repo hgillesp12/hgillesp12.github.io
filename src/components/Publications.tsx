@@ -30,7 +30,7 @@ export default function Publications() {
         title: "Fastener Collar Retainer",
         id: "US20230030042A1",
         date: "Feb 2023",
-        status: "Patent Pending",
+        status: "Granted Patent",
         link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
       },
         {
