@@ -44,21 +44,21 @@ export default function Experience() {
         "Collaborating with the board to support community-driven initiatives and mission growth",
       ],
     },
-    {
-      title: "Marshall Scholar",
-      company: "University of Cambridge",
-      period: "2023 - 2024",
-      icon: <FlaskConical className="h-6 w-6 text-primary" />,
-      description: [
-        "MPhil in Engineering for Sustainable Development",
-        "Focused on human-centered design and sustainable infrastructure in developing regions",
-      ],
-    },
-    {
-      title: "Research Assistant",
-      company: "University of Notre Dame / Imperial College London",
-      period: "2016 - 2020",
-      icon: <FlaskConical className="h-6 w-6 text-primary" />,
+      {
+        title: "Marshall Scholar",
+        company: "University of Cambridge",
+        period: "2023 - 2024",
+        icon: <FlaskRound className="h-6 w-6 text-primary" />,
+        description: [
+          "MPhil in Engineering for Sustainable Development",
+          "Focused on human-centered design and sustainable infrastructure in developing regions",
+        ],
+      },
+      {
+        title: "Research Assistant",
+        company: "University of Notre Dame / Imperial College London",
+        period: "2016 - 2020",
+        icon: <FlaskRound className="h-6 w-6 text-primary" />,
       description: [
         "Morph Lab (Imperial College London): Developed robotic proxy finger for remote haptic feedback evaluation",
         "Kellogg Institute (Haiti): Conducted NSF-funded reconnaissance survey logic and code development",
