@@ -19,7 +19,6 @@ export default function Navigation() {
     const navItems = [
       { name: "News", href: "#news" },
       { name: "About", href: "#about" },
-      { name: "Skills", href: "#skills" },
       { name: "Projects", href: "#projects" },
         { name: "Publications & Patents", href: "#publications" },
       { name: "Experience", href: "#experience" },
