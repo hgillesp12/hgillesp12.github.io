@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import News from "@/components/News";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
 import Experience from "@/components/Experience";
