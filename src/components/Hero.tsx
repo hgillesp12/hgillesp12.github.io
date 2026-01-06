@@ -80,13 +80,13 @@ export default function Hero() {
               <Linkedin className="h-5 w-5" />
             </a>
           </Button>
-          <Button variant="ghost" size="icon" asChild>
-            <a
-              href="mailto:contact@example.com"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => scrollToSection("#contact")}
+            aria-label="Email"
+          >
+            <Mail className="h-5 w-5" />
           </Button>
           <Button variant="ghost" size="icon" asChild>
             <a
