@@ -6,7 +6,7 @@ import { ExternalLink, Github, Globe, Youtube } from "lucide-react";
 export default function Projects() {
     const projects = [
       {
-        title: "Sustainable Seaweed Farming at Scale",
+        title: "Sustainable Seaweed Farming",
         description: "A systems thinking approach analyzing pathways for sustainable seaweed farming expansion, exploring ecological and economic impacts.",
         technologies: ["Causal Loop Diagram", "MICMAC Matrix"],
         countries: ["🇵🇭", "🇮🇩", "🇲🇾", "🇹🇿", "🇬🇧"],
