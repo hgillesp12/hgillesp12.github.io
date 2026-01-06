@@ -86,19 +86,11 @@ export default function Publications() {
                           <Calendar className="h-5 w-5 text-muted-foreground shrink-0" />
                           <p className="text-sm">{pub.date}</p>
                         </div>
-                        <div className="flex items-center gap-3">
-                          <MapPin className="h-5 w-5 text-muted-foreground shrink-0" />
-                          <p className="text-sm">{pub.location}</p>
-                        </div>
-                        {pub.institution && (
                           <div className="flex items-center gap-3">
-                            <div className="h-5 w-5 text-muted-foreground flex items-center justify-center shrink-0">
-                              <span className="text-[10px] font-bold">UNI</span>
-                            </div>
-                            <p className="text-sm">{pub.institution}</p>
+                            <MapPin className="h-5 w-5 text-muted-foreground shrink-0" />
+                            <p className="text-sm">{pub.location}</p>
                           </div>
-                        )}
-                      </div>
+                        </div>
                       {pub.link && (
                         <div className="pt-2">
                           <a
