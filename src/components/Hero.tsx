@@ -33,7 +33,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-4">
-          Engineer + Researcher + Entrepreneur
+          Engineer + Entrepreneur
         </p>
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
