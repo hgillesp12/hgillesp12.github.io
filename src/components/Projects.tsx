@@ -21,7 +21,7 @@ export default function Projects() {
         description: "A ROS2-based system for detecting Acute Oak Decline (AOD) in oak trees using YOLOv5 and deep learning, integrated with RViz for visualization.",
         technologies: ["ROS2", "Python", "RViz", "Deep Learning", "YOLOv5"],
         countries: ["🇬🇧"],
-        image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&q=80",
+        image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/drone.f25774a31667a87f6c33-1767698811869.png?width=8000&height=8000&resize=contain",
         links: [
           { label: "Code", href: "https://github.com/hgillesp12/aod_detection", icon: Github },
           { label: "Presentation", href: "https://drive.google.com/file/d/1Ef2tnZcB19WXntpJwtl0GVi0ranJ10DQ/view", icon: ExternalLink },
