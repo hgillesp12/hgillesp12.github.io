@@ -8,7 +8,7 @@ export default function Projects() {
         {
           title: "Sustainable Seaweed Farming",
           description: "A systems thinking approach analyzing pathways for sustainable seaweed farming expansion, exploring ecological and economic impacts.",
-          technologies: ["Causal Loop Diagram", "MICMAC Matrix", "Data Triangulation", "Mixed Methods Research"],
+          technologies: ["Causal Loop Diagram", "MICMAC Matrix", "Data Triangulation", "Mixed Methods"],
           countries: ["🇵🇭", "🇮🇩", "🇲🇾", "🇹🇿", "🇬🇧"],
         image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/Screenshot-2026-01-06-at-11.16.58-AM-resized-1767698241072.webp?width=8000&height=8000&resize=contain",
         links: [
