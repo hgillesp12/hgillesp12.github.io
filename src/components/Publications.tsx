@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Calendar, MapPin, User, FlaskConical } from "lucide-react";
+import { BookOpen, Calendar, MapPin, User, FlaskRound } from "lucide-react";
 import Image from "next/image";
 
 export default function Publications() {
