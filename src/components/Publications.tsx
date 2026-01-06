@@ -22,20 +22,21 @@ export default function Publications() {
     },
   ];
 
-  const patents = [
-    {
-      title: "System and Method for Control of an Aircraft System",
-      id: "US20230030042A1",
-      date: "Feb 2023",
-      link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
-    },
-    {
-      title: "System and Method for Intelligent Flight Support",
-      id: "US20250124796A1",
-      date: "April 2025",
-      link: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE",
-    },
-  ];
+    const patents = [
+      {
+        title: "Fastener Collar Retainer",
+        id: "US20230030042A1",
+        date: "Feb 2023",
+        link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
+      },
+      {
+        title: "Runway Incursion Detector",
+        id: "US20250124796A1",
+        date: "April 2025",
+        link: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE",
+      },
+    ];
+
 
   return (
     <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8">
