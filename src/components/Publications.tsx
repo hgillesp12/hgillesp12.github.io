@@ -120,17 +120,21 @@ export default function Publications() {
 
         <div>
           <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-            <FlaskConical className="h-6 w-6 text-primary" />
+            <FlaskRound className="h-6 w-6 text-primary" />
             Patents
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {patents.map((patent, index) => (
-              <Card key={index} className="hover:shadow-md transition-shadow border-l-4 border-l-primary">
+              <Card key={index} className={`hover:shadow-md transition-shadow border-l-4 ${patent.status === "Granted Patent" ? "border-l-emerald-500" : "border-l-amber-500"}`}>
                 <CardHeader>
                   <div className="flex justify-between items-start gap-4">
                     <CardTitle className="text-lg leading-tight">{patent.title}</CardTitle>
                     {patent.status && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-2 py-1 rounded-full whitespace-nowrap">
+                      <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full whitespace-nowrap ${
+                        patent.status === "Granted Patent" 
+                          ? "bg-emerald-100 text-emerald-700" 
+                          : "bg-amber-100 text-amber-700"
+                      }`}>
                         {patent.status}
                       </span>
                     )}
