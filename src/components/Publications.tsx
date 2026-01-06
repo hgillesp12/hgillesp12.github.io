@@ -29,9 +29,9 @@ export default function Publications() {
         date: "Feb 2023",
         link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
       },
-      {
-        title: "Runway Incursion Detector",
-        id: "US20250124796A1",
+        {
+          title: "Runway Incursion Detection",
+          id: "US20250124796A1",
         date: "April 2025",
         link: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE",
       },
