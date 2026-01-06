@@ -88,13 +88,31 @@ export default function Experience() {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
-                  {exp.description.map((item, idx) => (
-                    <li key={idx} className="leading-relaxed">{item}</li>
-                  ))}
-                </ul>
-              </CardContent>
+                <CardContent className="space-y-4">
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-2">
+                    {exp.description.map((item, idx) => (
+                      <li key={idx} className="leading-relaxed">{item}</li>
+                    ))}
+                  </ul>
+
+                  {exp.links && exp.links.length > 0 && (
+                    <div className="flex flex-wrap gap-4 pt-2">
+                      {exp.links.map((link, idx) => (
+                        <a
+                          key={idx}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline group"
+                        >
+                          {link.label}
+                          <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+
             </Card>
           ))}
         </div>
