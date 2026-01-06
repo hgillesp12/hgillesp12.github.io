@@ -8,12 +8,17 @@ export default function Experience() {
       company: "Boeing Commercial Airplanes",
       period: "Current",
       icon: <Briefcase className="h-6 w-6 text-primary" />,
-      description: [
-        "Developing autonomous systems and advanced flight technologies for commercial aircraft",
-        "Completed Engineering Rotational Program, gaining cross-functional experience across Boeing",
-        "Previously served as a summer intern for two consecutive years",
-      ],
-    },
+        description: [
+          "Developing autonomous systems and advanced flight technologies for commercial aircraft",
+          "Completed Engineering Rotational Program, gaining cross-functional experience across Boeing",
+          "Previously served as a summer intern for two consecutive years",
+        ],
+        links: [
+          { label: "Featured Article: Smarter, Safer Airplanes", url: "https://onfirstup.com/boeing/BNN/articles/video-smarter-safer-airplanes-enabled-by-machine-learning-1" },
+          { label: "US Patent: Aircraft System Control", url: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1" },
+        ],
+      },
+
     {
       title: "Treasurer, Board of Directors",
       company: "Ascend NW",
