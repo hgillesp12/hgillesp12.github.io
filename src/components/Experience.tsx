@@ -1,8 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, FlaskConical, Users } from "lucide-react";
+import { Briefcase, FlaskConical, Users, ExternalLink } from "lucide-react";
 
 export default function Experience() {
-  const experiences = [
+  interface ExperienceLink {
+    label: string;
+    url: string;
+  }
+
+  interface ExperienceItem {
+    title: string;
+    company: string;
+    period: string;
+    icon: React.ReactNode;
+    description: string[];
+    links?: ExperienceLink[];
+  }
+
+  const experiences: ExperienceItem[] = [
     {
       title: "Autonomous Systems Engineer",
       company: "Boeing Commercial Airplanes",
