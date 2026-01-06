@@ -139,7 +139,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="text-foreground">Cambridge, UK</p>
+                      <p className="text-foreground">London, UK</p>
                   </div>
                 </div>
               </CardContent>
