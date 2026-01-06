@@ -28,14 +28,14 @@ export default function Publications() {
 
     const patents = [
       {
-        title: "Fastener Collar Retainer (Granted Patent)",
+        title: "Fastener Collar Retainer",
         id: "US20230030042A1",
         date: "Feb 2023",
         status: "Granted Patent",
         link: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1",
       },
         {
-          title: "Runway Incursion Detection (Patent Pending)",
+          title: "Runway Incursion Detection",
           id: "US20250124796A1",
           date: "April 2025",
           status: "Patent Pending",
