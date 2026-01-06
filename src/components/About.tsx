@@ -14,7 +14,7 @@ export default function About() {
             My research journey has taken me from developing robotic proxy fingers for haptic feedback at Imperial College London to co-creating all-natural biosand filters in Léogâne, Haiti. I believe that true innovation happens when we prioritize the needs and voices of the people we serve, whether designing autonomous systems for commercial aircraft or building resilient infrastructure in developing regions.
           </p>
           <p className="leading-relaxed">
-            I am a former Autonomous Systems Engineer at Boeing and currently working on two start up ventures. I am passionate about leveraging my background in engineering for sustainable development to create a more equitable and resilient future.
+            I am a former Autonomous Systems Engineer at Boeing currently working on two start-up ventures in the UK. I am passionate about leveraging my background in engineering for sustainable development to create a more equitable and resilient future.
           </p>
         </div>
       </div>
