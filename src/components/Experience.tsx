@@ -29,8 +29,9 @@ export default function Experience() {
         ],
         links: [
           { label: "Featured Article: Smarter, Safer Airplanes", url: "https://onfirstup.com/boeing/BNN/articles/video-smarter-safer-airplanes-enabled-by-machine-learning-1" },
-          { label: "US Patent: Aircraft System Control", url: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1" },
-        ],
+            { label: "US Patent: Aircraft System Control", url: "https://patents.google.com/patent/US20230030042A1/en?oq=US-20230030042-A1" },
+            { label: "US Patent: Intelligent Flight Support", url: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE" },
+          ],
       },
 
     {
