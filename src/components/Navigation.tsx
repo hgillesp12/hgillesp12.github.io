@@ -16,13 +16,15 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Contact", href: "#contact" },
-  ];
+    const navItems = [
+      { name: "About", href: "#about" },
+      { name: "Skills", href: "#skills" },
+      { name: "Projects", href: "#projects" },
+      { name: "Publications", href: "#publications" },
+      { name: "Experience", href: "#experience" },
+      { name: "Contact", href: "#contact" },
+    ];
+
 
   const scrollToSection = (href: string) => {
     setIsOpen(false);
