@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, FlaskConical, Users, ExternalLink } from "lucide-react";
+import { Briefcase, FlaskRound, Users, ExternalLink } from "lucide-react";
 
 export default function Experience() {
   interface ExperienceLink {
