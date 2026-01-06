@@ -21,7 +21,8 @@ export default function Publications() {
       date: "January 2023",
         location: "National Harbor, Maryland",
         link: "https://arc.aiaa.org/doi/10.2514/6.2023-0119",
-        image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/image-1740686419041.png?width=8000&height=8000&resize=contain",
+          image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/bos.ac4f1c5727896db25fff-1767701597953.png?width=8000&height=8000&resize=contain",
+
       },
   ];
 
