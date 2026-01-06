@@ -31,9 +31,12 @@ export default function Projects() {
         title: "Perception-Based Navigation",
         description: "Autonomous navigation system developed using ROS1 and Machine Learning for real-time perception and path planning in complex environments.",
         technologies: ["ROS1", "Python", "Machine Learning", "Docker", "Git", "SQL"],
-        countries: [],
+        countries: ["🇺🇸"],
         image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/Boeing.281c5d7a236f475054ff-1767700647373.png?width=8000&height=8000&resize=contain",
-        links: [],
+        links: [
+          { label: "Article", href: "https://onfirstup.com/boeing/BNN/articles/video-smarter-safer-airplanes-enabled-by-machine-learning-1", icon: ExternalLink },
+          { label: "Patent", href: "https://patents.google.com/patent/US20250124796A1/en?inventor=Hannah+G.+GILLESPIE", icon: FileText },
+        ],
       },
         {
           title: "Low-Cost Biosand Filter",
