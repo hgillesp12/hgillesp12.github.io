@@ -4,6 +4,16 @@ import path from "node:path";
 const LOADER = path.resolve(__dirname, 'src/visual-edits/component-tagger-loader.js');
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'hgillesp12.github.io' }],
+        destination: 'https://hannahgillespieportfolio.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
