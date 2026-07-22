@@ -12,7 +12,7 @@ export default function Projects() {
           countries: ["🇵🇭", "🇮🇩", "🇲🇾", "🇹🇿", "🇬🇧"],
         image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/fd7356cb-78eb-41c8-9e6e-ac71139d03d8/Screenshot-2026-01-06-at-11.16.58-AM-resized-1767698241072.webp?width=8000&height=8000&resize=contain",
         links: [
-          { label: "Website", href: "https://seaweed-growth-pathways.vercel.app/", icon: Globe },
+          { label: "Website", href: "https://seaweed-growth-pathways-eta.vercel.app/", icon: Globe },
           { label: "Presentation", href: "https://youtu.be/1f9LoW8mZTM?si=4lRp8IB-VXa-6Tn9", icon: Youtube },
         ],
       },
